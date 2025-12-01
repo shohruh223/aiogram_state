@@ -4,7 +4,7 @@ from keyboard.default_keyboard import main_keyboard, crud_keyboard
 
 router = Router()
 
-
+# bu start
 @router.message(Command('start'))
 async def send_message(message: types.Message):
     await message.answer(f"Salom {message.from_user.full_name}",
